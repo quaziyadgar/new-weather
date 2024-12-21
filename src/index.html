@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Weather Forecast Dashboard</h1>
+    <div class="flex gap-2">
+      <input type="text" id="city-input" placeholder="Enter city name" class="border rounded p-2 w-full" />
+      <button id="search-btn" class="bg-blue-500 text-white p-2 rounded">Search</button>
+      <button id="current-btn" class="bg-green-500 text-white p-2 rounded">Current Location</button>
+    </div>
+    <div id="recent-cities" class="mt-4"></div>
+    <div id="weather-info" class="mt-6"></div>
+    <div id="forecast-info" class="mt-6 flex justify-around border-red-700"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
